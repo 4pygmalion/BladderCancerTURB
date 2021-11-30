@@ -1,0 +1,58 @@
+LABEL:
+  NEGATIVE: ["Negative  for  malignancy",
+          "Negative  for  malignancy",
+          "Chronic  cystitis,  moderate",
+          "Hyperplastic  papillary  urothelium  with  mild  atypia",
+          "Chronic  inflammation,  no  tumor  present",
+          "negative  for  malignancy",
+          "Acute  and  chronic  inflammation",
+          "Chronic  active  inflammation",
+          "with  minimal  cellular  atypia",
+          "no stromal invasion",
+          "Chronic  ulcerative  inflammation",
+          "(n|N)o  tumor  present",
+          "Chronic  inflammation,  moderate",
+          "Papillary  urothelial  proliferative  lesion  of  uncertain  malignant",
+          "No  residual  tumor",
+          "Chronic  cystitis",
+          "No  urothelial  dysplasia  or  malignancy",
+          "Severe  chronic  inflammation  with  edematous  vascular  stroma",
+          "Chronic  active  cystitis",
+          "Muscular  hypertrophy  and  subepithelial  fibrosis",
+          "Severe  chronic  active  inflammation  with  noncaseating  granulomas"]
+  POSITIVE: ["HIGH.{0,3}GRADE",
+        "LOW GRADE",
+        "NON-INVASIVE  PAPILLARY  UROTHELIAL  CARCINOMA",
+        "WHO  GRADE  [1-3]/3",
+        "T[1-3][a-b]",
+        "RESIDUAL  UROTHELIAL  CARCINOMA  IN  SITU  WITH  INVOLVEMENT",
+        "UROTHELIAL  CELL  CARCINOMA  IN  SITU  ( TCIS )",
+        "CONSISTENT  WITH  PAPILLARY  UROTHELIAL  CARCINOMA",
+        "stromal  invasion",
+        "TRANSITIONAL  CELL  CARCINOMA",
+        "invasion  into  subepithelial  connective  tissue",
+        "It  may  represent  preneoplastic  lesion  of  papillary  urothelial  tumor",
+        "INFILTRATING  UROTHELIAL  CARCINOMA",
+        "UROTHELIAL  CARCINOMA  IN  SITU  WITHOUT  INVOLVEMENT",
+        "urothelial  carcinoma  in  situ  with  involvement",
+        "CONSISTENT  WITH  UROTHELIAL  CARCINOMA  IN  SITU",
+        "transitional  cell  carcinoma",
+        "invasion  into  muscularis  propria",
+        "LYMPHOVASCULAR  INVASION:  PRESENT",
+        "lymphovascular  invasion:  present",
+        "lymphovascular  invasion"]
+NM_INVASION:
+        POSITIVE: [invasion  into  muscularis  propria]
+        NEGATIVE: 
+        - Proper  muscle  present
+        - Presence  of  proper  muscle(\s)+layer\?
+        - presence(\s){0,3}of(\s){0,3}proper(\s){0,3}muscle(\s){0,3}layer(\s){0,3}without(\s){0,3}tumor(\n)(\s){0,25}involvement
+        - Muscularis  propria  present
+        NO_MUSCLE: ["absence  of  proper  muscle  layer"]
+UROTHELIAL_CA:
+       - "UROTHELIAL.{0,4}CARCINOMA"
+       - "INFILTRATING  TRANSITIONAL  CELL  CARCINOMA"
+       - "urothelial.{0,3}carcinoma.{0,3}in.{0,3}situ"
+       - "transitional.{0,2}carcinoma"
+       - "T.{0,2}C.{0,2}C"
+       - "Papillary.{0,3}urothelial.{0,3}carcninoma"

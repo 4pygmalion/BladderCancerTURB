@@ -1,0 +1,2 @@
+PATHOLOGY_REPORTS: "data/merged_report20191204.csv"
+COLUMNS: ['research_id', 'op_date', 'op_name', 'result']

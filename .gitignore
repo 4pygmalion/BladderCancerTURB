@@ -1,0 +1,8 @@
+
+__pycahce__
+data/*
+*.csv
+*.xlsx
+*.doc
+*.txt
+outputs/*

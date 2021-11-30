@@ -1,2 +1,10 @@
-PATHOLOGY_REPORTS: "data/merged_report20191204.csv"
-COLUMNS: ['research_id', 'op_date', 'op_name', 'result']
+PATHOLOGY_REPORTS: 
+  FILE: "data/merged_report20191204.csv"
+  COLS: ['research_id', 'op_date', 'op_name', 'result']
+PATIENTS_TABLE: 
+  FILE: "TURB_path_IDList.xlsx"
+  COLS: ['research_id', 'op_date', 'op_name','seq','result','code']
+  SAVE_COLS: ['research_id', 'op_date', 'op_name','seq','code']
+
+PATIENT_INFO:
+  FILE: pt_sex_age.xlsx

@@ -4,7 +4,7 @@ ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 PREP_DIR = os.path.join(ROOT_DIR, "preprocess")
 
 from utils import open_yaml
-from preprocess import RegexFeatureExtractor
+from preprocess import RegexFeatureExtractor, PatientSelector
 
 
 if __name__ == "__main__":
@@ -14,3 +14,6 @@ if __name__ == "__main__":
 
     feature_extractor = RegexFeatureExtractor(CONFIG, KEYWORDS)
     feature_extractor.preprocess()
+
+    pt_selector = PatientSelector(CONFIG)
+    pt_selector.process()
